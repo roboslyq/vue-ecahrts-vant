@@ -2,6 +2,7 @@
   <div class="navbar">
     <span @click="mapToOrigonMap">选择地图</span>
     <span @click="mapToBrokenline">折线图</span>
+    <span @click="mapToPercent">环形比率图</span>
     <span @click="mapTomap">省地图</span>
     <span @click="mapTobannerMap">左右切换地图</span>
   </div>
@@ -22,6 +23,9 @@ export default {
     },
     mapTobannerMap() {
       this.$router.push("/chinamapbanner");
+    },
+    mapToPercent() {
+      this.$router.push("/percent");
     }
   }
 };

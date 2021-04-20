@@ -5,6 +5,7 @@ import Register from "./views/register/index.vue";
 import Brokenline from "./views/brokenline.vue";
 import Amap from "./views/amap.vue";
 import Chinamap from "./views/chinamap.vue";
+import Percent from "./views/percent.vue";
 
 Vue.use(Router);
 
@@ -36,6 +37,11 @@ export default new Router({
       path: "/chinamapbanner",
       name: "chinamapbanner",
       component: Chinamap
+    },
+    {
+      path: "/percent",
+      name: "percent",
+      component: Percent
     }
   ]
 });
